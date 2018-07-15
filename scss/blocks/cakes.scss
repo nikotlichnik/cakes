@@ -1,0 +1,181 @@
+.cakes__wrapper {
+  @include wrapper320;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.cakes__title {
+  @include section-title320;
+
+  margin-bottom: 30px;
+}
+
+.cakes__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.cakes__item {
+  margin-bottom: 10px;
+
+  position: relative;
+}
+
+.cakes__link {
+  display: block;
+  min-height: 98px;
+  padding: 11px;
+
+  position: relative;
+
+  text-decoration: none;
+
+  background-color: $white;
+  background-repeat: no-repeat;
+}
+
+.cakes__link:hover::after {
+  content: '';
+  display: block;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+
+  background-color: $white;
+  opacity: 0.4;
+}
+
+.cakes__link--classic {
+  background-image: url('../../img/classic.png');
+  background-position: -3px -62px;
+}
+
+.cakes__link--muss {
+  background-image: url('../../img/muss.png');
+  background-position: -80px -90px;
+}
+
+.cakes__link--wedding {
+  background-image: url('../../img/wedding.png');
+  background-position: -20px -25px;
+}
+
+.cakes__link--mens {
+  background-image: url('../../img/mens.png');
+  background-position: -2px -52px;
+}
+
+.cakes__link--womans {
+  background-image: url('../../img/womans.png');
+  background-position: -95px -49px;
+}
+
+.cakes__link--kids {
+  background-image: url('../../img/kids.png');
+  background-position: -3px -50px;
+}
+
+.cakes__item-title {
+  margin: 0;
+  padding: 0;
+
+  position: relative;
+  z-index: 2;
+
+  color: $title-grey;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.cakes__amount {
+  color: rgba($title-grey, 0.7);
+
+  position: relative;
+  z-index: 2;
+
+  font-size: 12px;
+  line-height: 16px;
+}
+
+@media (min-width: $tablet-width) {
+  .cakes__wrapper {
+    @include wrapper768;
+  }
+
+  .cakes__title {
+    @include section-title768;
+    text-align: left;
+  }
+
+  @supports (display: grid) {
+    .cakes__list {
+      display: grid;
+      grid-template-columns: 289px 112px 289px;
+      grid-template-rows: repeat(4, 186px);
+      grid-gap: 20px;
+    }
+
+    .cakes__item {
+      margin-bottom: 0;
+    }
+
+    .cakes__item--large {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+
+    .cakes__item--small {
+      grid-column: span 1;
+      grid-row: span 1;
+    }
+  }
+
+  .cakes__item {
+    box-shadow: 0 10px 10px 0 rgba($cake-cart-shadow, 0.05);
+  }
+
+  .cakes__item:hover {
+    box-shadow: 0 10px 10px 0 rgba($cake-cart-shadow, 0.12);
+  }
+
+  .cakes__link {
+    padding: 19px 26px;
+    height: calc(100% - 19px - 19px);
+  }
+
+  .cakes__link--classic{
+    background-image: url('../../img/classic768.png');
+    background-position: -3px -11px;
+  }
+
+  .cakes__link--muss {
+    background-image: url('../../img/muss768.png');
+    background-position: -71px -34px;
+  }
+
+  .cakes__link--wedding {
+    background-image: url('../../img/wedding768.png');
+    background-position: -119px -12px;
+  }
+
+  .cakes__link--mens {
+    background-image: url('../../img/mens768.png');
+    background-position: -23px -23px;
+  }
+
+  .cakes__link--womans {
+    background-image: url('../../img/womans768.png');
+    background-position: -106px -42px;
+  }
+
+  .cakes__link--kids {
+    background-image: url('../../img/kids768.png');
+    background-position: -43px -17px;
+  }
+}

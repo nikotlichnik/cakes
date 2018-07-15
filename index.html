@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <title>Магазин тортов "Cakes"</title>
+  <!-- build:css css/style.min.css -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <!-- endbuild -->
+</head>
+<body>
+<header class="page-header">
+  <div class="page-header__wrapper">
+    <img class="page-header__logo" src="img/logo.png">
+    <nav class="page-header__menu main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item"><a href="#" class="main-nav__link">Наши торты</a></li>
+        <li class="main-nav__item"><a href="#" class="main-nav__link">Индивидуальный заказ</a></li>
+        <li class="main-nav__item"><a href="#" class="main-nav__link">Отзывы</a></li>
+        <li class="main-nav__item"><a href="#" class="main-nav__link">О нас</a></li>
+        <li class="main-nav__item"><a href="#" class="main-nav__link">Как заказать</a></li>
+        <li class="main-nav__item"><a href="#" class="main-nav__link">Контакты</a></li>
+      </ul>
+    </nav>
+    <button class="page-header__menu-button">
+      <span class="visually-hidden">Меню</span>
+      <div class="page-header__menu-button-hamburger"></div>
+    </button>
+    <div class="page-header__phone">+7 906 899 92 96</div>
+  </div>
+</header>
+<main class="page-main">
+  <h1 class="visually-hidden">Магазин тортов "Cakes"</h1>
+  <section class="promo">
+    <div class="promo__wrapper">
+      <h2 class="promo__title">Торты на заказ</h2>
+      <b class="promo__subtitle">Ручная работа</b>
+      <ul class="promo__features">
+        <li class="promo__feature promo__feature--natural">Натуральные ингредиенты</li>
+        <li class="promo__feature promo__feature--gift">Доставка бесплатно при заказе от 2000 рублей*</li>
+      </ul>
+      <a class="promo__link" href="#">Выбрать торт</a>
+    </div>
+  </section>
+  <section class="cakes">
+    <div class="cakes__wrapper">
+      <h2 class="cakes__title">Наши торты</h2>
+      <ul class="cakes__list">
+        <li class="cakes__item cakes__item--large">
+          <a href="#" class="cakes__link cakes__link--classic">
+            <h3 class="cakes__item-title">Классические</h3>
+            <span class="cakes__amount">24 вида</span>
+          </a>
+        </li>
+        <li class="cakes__item cakes__item--small">
+          <a href="#" class="cakes__link  cakes__link--muss">
+            <h3 class="cakes__item-title">Муссовые</h3>
+            <span class="cakes__amount">12 видов</span>
+          </a>
+        </li>
+        <li class="cakes__item cakes__item--small">
+          <a href="#" class="cakes__link  cakes__link--wedding">
+            <h3 class="cakes__item-title">Свадебные</h3>
+            <span class="cakes__amount">20 видов</span>
+          </a>
+        </li>
+        <li class="cakes__item cakes__item--small">
+          <a href="#" class="cakes__link  cakes__link--mens">
+            <h3 class="cakes__item-title">Мужчинам</h3>
+            <span class="cakes__amount">12 видов</span>
+          </a>
+        </li>
+        <li class="cakes__item cakes__item--large">
+          <a href="#" class="cakes__link  cakes__link--kids">
+            <h3 class="cakes__item-title">Детские</h3>
+            <span class="cakes__amount">18 видов</span>
+          </a>
+        </li>
+        <li class="cakes__item cakes__item--small">
+          <a href="#" class="cakes__link  cakes__link--womans">
+            <h3 class="cakes__item-title">Женщинам</h3>
+            <span class="cakes__amount">16 видов</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="order">
+    <div class="order__wrapper">
+      <h2 class="order__title">Индивидуальный заказ</h2>
+      <b class="order__subtitle">Соберите торт в 3 шага</b>
+    </div>
+  </section>
+</main>
+
+<!-- build:js js/main.min.js -->
+<script src="js/menu.js"></script>
+<!-- endbuild -->
+</body>
+</html>

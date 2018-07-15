@@ -1,0 +1,52 @@
+@mixin wrapper320 {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 $mobile-content-padding;
+}
+
+@mixin wrapper768 {
+  width: 728px;
+  margin: 0 auto;
+  padding: 0 $mobile-content-padding;
+}
+
+@mixin main-button {
+  display: block;
+  width: 226px;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 14px;
+  padding-bottom: 12px;
+
+  color: $white;
+  font-family: 'Circe', sans-serif;
+  font-size: 13px;
+  line-height: 26px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  background-color: $main-button-color;
+  border-radius: 25px;
+
+  &:hover{
+    box-shadow: 0 5px 5px 0 rgba($main-button-color, 0.3);
+  }
+}
+
+@mixin section-title320 {
+  margin: 0;
+  padding: 0;
+
+  color: $title-grey;
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  line-height: 35px;
+  font-weight: bold;
+  text-align: center;
+}
+
+@mixin section-title768{
+  margin-bottom: 38px;
+  font-size: 34px;
+}

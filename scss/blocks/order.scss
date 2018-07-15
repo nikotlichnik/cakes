@@ -1,0 +1,39 @@
+.order__wrapper{
+  @include wrapper320;
+  padding-top: 12px;
+  padding-bottom: 20px;
+}
+
+.order__title{
+  @include section-title320;
+  line-height: 30px;
+  margin-bottom: -17px;
+}
+
+.order__subtitle{
+  display: block;
+  margin: 0 auto;
+
+  color: $promo-subtitle-color;
+  font-family: 'IntroScript', sans-serif;
+  font-size: 22px;
+  line-height: 78px;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .order__wrapper{
+    @include wrapper768;
+    padding-top: 46px;
+  }
+
+  .order__title{
+    @include section-title768;
+    margin-bottom: 12px;
+  }
+
+  .order__subtitle{
+    font-size: 26px;
+    line-height: 30px;
+  }
+}

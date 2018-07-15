@@ -1,0 +1,161 @@
+.promo {
+
+}
+
+.promo__wrapper {
+  @include wrapper320;
+  padding-top: 124px;
+  padding-bottom: 30px;
+
+  background-image: url('../../img/cake.png');
+  background-repeat: no-repeat;
+  background-position: -30px -206px;
+}
+
+.promo__title {
+  width: 190px;
+  margin: 0 auto;
+  margin-bottom: -3px;
+  padding: 0;
+
+  color: $promo-title-color;
+  font-family: 'PlayfairDisplay', serif;
+  font-size: 49px;
+  font-weight: bold;
+  font-variant: petite-caps;
+  line-height: 36px;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.promo__subtitle {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: -5px;
+
+  color: $promo-subtitle-color;
+  font-family: 'IntroScript', sans-serif;
+  font-size: 22px;
+  line-height: 78px;
+  text-align: center;
+}
+
+.promo__features {
+  margin: 0;
+  margin-bottom: 42px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.promo__feature {
+  padding-left: 43px;
+  margin-bottom: 28px;
+
+  position: relative;
+
+  color: $black;
+  font-size: 14px;
+}
+
+.promo__feature:last-child{
+  margin-bottom: 0;
+}
+
+.promo__feature::before {
+  content: '';
+
+  width: 33px;
+  height: 33px;
+
+  position: absolute;
+  left: 0;
+  top: -3px;
+
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 33px 33px;
+}
+
+.promo__feature--natural::before {
+  background-image: url('../../img/products.svg');
+}
+
+.promo__feature--gift::before {
+  background-image: url('../../img/gift.svg');
+}
+
+.promo__link {
+  @include main-button;
+  user-select: none;
+}
+
+
+@media (min-width: $tablet-width) {
+  .promo__wrapper {
+    @include wrapper768;
+    display: flex;
+    flex-direction: column;
+    padding-top: 95px;
+    padding-bottom: 76px;
+
+    background-image: url('../../img/cake768.png');
+    background-position: 334px 13px;
+  }
+
+  .promo__title{
+    width: 280px;
+    margin: 0;
+    margin-bottom: 30px;
+    margin-left: 28px;
+
+    font-size: 76px;
+    line-height: 55px;
+    text-align: left;
+  }
+
+  .promo__subtitle{
+    width: 280px;
+    margin: 0;
+    margin-bottom: 54px;
+    margin-left: 28px;
+
+    font-size: 36px;
+    line-height: 40px;
+    text-align: left;
+  }
+
+  .promo__link{
+    margin: 0;
+    margin-left: 28px;
+    margin-bottom: 150px;
+  }
+
+  .promo__features{
+    order: 4;
+
+    display: flex;
+    margin-left: 28px;
+  }
+
+  .promo__feature{
+    margin-right: 25px;
+    padding-top: 13px;
+    padding-left: 65px;
+  }
+
+  .promo__feature::before{
+    width: 55px;
+    height: 55px;
+
+    background-size: 55px 55px;
+  }
+
+  .promo__feature--natural{
+    width: 128px;
+  }
+
+  .promo__feature--gift{
+    width: 165px;
+  }
+}

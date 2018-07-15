@@ -1,0 +1,66 @@
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body{
+  color: $black;
+  font-family: 'Circe', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+
+  background: $body-color;
+}
+
+@font-face {
+  font-family: 'Circe';
+  src: url("../fonts/Circe-Regular.woff") format('woff');
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Circe';
+  src: url("../fonts/Circe-Bold.woff") format('woff');
+  font-display: swap;
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PlayfairDisplay';
+  src: url("../fonts/PlayfairDisplaySC-Bold.woff2") format('woff2'),
+  url("../fonts/PlayfairDisplaySC-Bold.woff") format('woff');
+  font-display: swap;
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PlayfairDisplay';
+  src: url("../fonts/PlayfairDisplaySC-BoldItalic.woff2") format('woff2'),
+  url("../fonts/PlayfairDisplaySC-BoldItalic.woff") format('woff');
+  font-display: swap;
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'IntroScript';
+  src: url("../fonts/IntroScriptR-H2Base.otf") format('opentype');
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
